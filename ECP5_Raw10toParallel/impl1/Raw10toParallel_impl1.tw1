@@ -1,0 +1,734 @@
+
+Loading design for application trce from file Raw10toParallel_impl1_map.ncd.
+Design name: RAW10toParallel
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5UM-85F
+Package:     CABGA756
+Performance: 8
+Loading device for application trce from file 'sa5p85m.nph' in environment: /usr/local/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.43.
+Performance Hardware Data Status:   Final          Version 55.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.1.454
+Tue May 26 12:56:08 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Raw10toParallel_impl1.tw1 Raw10toParallel_impl1_map.ncd Raw10toParallel_impl1.prf 
+Design file:     Raw10toParallel_impl1_map.ncd
+Preference file: Raw10toParallel_impl1.prf
+Device,speed:    LFE5UM-85F,8
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+90 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY PORT "CSI2_sens_clk" 148.500000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.293ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              image_pipe_inst/u_gamma_correction/gamma_inst/gammaCorrector_inst/u1_gamma_core/u1_lut_core/u1_lookuptable/dout0[10]  (from CSI2_sens_clk_c +)
+   Destination:    ALU54B     Port           frame_grabber_inst/un1_green_in_1[19:0](ASIC)  (to CSI2_sens_clk_c +)
+
+   Delay:               4.299ns  (80.5% logic, 19.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      4.299ns physical path delay image_pipe_inst/u_gamma_correction/gamma_inst/gammaCorrector_inst/u1_gamma_core/u1_lut_core/u1_lookuptable/SLICE_6692 to frame_grabber_inst/un1_green_in_1[19:0] meets
+      6.734ns delay constraint less
+      2.142ns MU_SET requirement (totaling 4.592ns) by 0.293ns
+
+ Physical Path Details:
+
+      Data path image_pipe_inst/u_gamma_correction/gamma_inst/gammaCorrector_inst/u1_gamma_core/u1_lut_core/u1_lookuptable/SLICE_6692 to frame_grabber_inst/un1_green_in_1[19:0]:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395 *LICE_6692.CLK to *SLICE_6692.Q0 image_pipe_inst/u_gamma_correction/gamma_inst/gammaCorrector_inst/u1_gamma_core/u1_lut_core/u1_lookuptable/SLICE_6692 (from CSI2_sens_clk_c)
+ROUTE         2   e 0.419 *SLICE_6692.Q0 to *_in[16:0].A10 rgb[10]
+PD_DEL      ---     3.066 *_in[16:0].A10 to *_in[16:0].P15 frame_grabber_inst/un1_blue_in[16:0]
+ROUTE         1   e 0.419 *_in[16:0].P15 to *n_1[19:0].C15 frame_grabber_inst/un1_blue_in_P15 (to CSI2_sens_clk_c)
+                  --------
+                    4.299   (80.5% logic, 19.5% route), 2 logic levels.
+
+Report:  155.255MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY PORT "clk_i" 27.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 26.668ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/present_state[2]  (from clk_i_c +)
+   Destination:    FF         Data in        cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/present_state_1[1]  (to clk_i_c +)
+
+   Delay:              10.579ns  (32.7% logic, 67.3% route), 18 logic levels.
+
+ Constraint Details:
+
+     10.579ns physical path delay cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_6134 to cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_409 meets
+     37.037ns delay constraint less
+     -0.210ns DIN_SET requirement (totaling 37.247ns) by 26.668ns
+
+ Physical Path Details:
+
+      Data path cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_6134 to cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_409:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395 *LICE_6134.CLK to *SLICE_6134.Q0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_6134 (from clk_i_c)
+ROUTE       354   e 0.419 *SLICE_6134.Q0 to *LICE_15210.A1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/present_state[2]
+CTOF_DEL    ---     0.180 *LICE_15210.A1 to *LICE_15210.F1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/SLICE_15210
+ROUTE        19   e 0.419 *LICE_15210.F1 to *LICE_18610.D0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/wrenable_reg_517_1_1
+CTOF_DEL    ---     0.180 *LICE_18610.D0 to *LICE_18610.F0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_18610
+ROUTE         1   e 0.419 *LICE_18610.F0 to *LICE_14959.C1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/selector_IN_UNBOUNDED_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_490291_490510_1_0_a2_sx
+CTOF_DEL    ---     0.180 *LICE_14959.C1 to *LICE_14959.F1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/SLICE_14959
+ROUTE         3   e 0.419 *LICE_14959.F1 to *LICE_15271.C0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/selector_IN_UNBOUNDED_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_490291_490510
+CTOF_DEL    ---     0.180 *LICE_15271.C0 to *LICE_15271.F0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/SLICE_15271
+ROUTE         1   e 0.419 *LICE_15271.F0 to *LICE_15269.A0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Datapath_i/input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0/N_358
+CTOF_DEL    ---     0.180 *LICE_15269.A0 to *LICE_15269.F0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/SLICE_15269
+ROUTE         2   e 0.419 *LICE_15269.F0 to *LICE_18798.C0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Datapath_i/input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0/active_m1_e_0_1_0
+CTOF_DEL    ---     0.180 *LICE_18798.C0 to *LICE_18798.F0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Datapath_i/input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0/SLICE_18798
+ROUTE         1   e 0.419 *LICE_18798.F0 to *LICE_15052.D1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Datapath_i/input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0/active_N_13_mux_i_0_a_4_a_117_140_57_sx
+CTOF_DEL    ---     0.180 *LICE_15052.D1 to *LICE_15052.F1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Datapath_i/input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0/SLICE_15052
+ROUTE         2   e 0.419 *LICE_15052.F1 to *LICE_15273.C0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Datapath_i/input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0/active_N_13_mux_i_0_a_4_a_117_140_57
+CTOF_DEL    ---     0.180 *LICE_15273.C0 to *LICE_15273.F0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Datapath_i/input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0/SLICE_15273
+ROUTE         1   e 0.419 *LICE_15273.F0 to *LICE_15044.C1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Datapath_i/input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0/active_N_13_mux_i_0_a_4_a_117_140_sx
+CTOF_DEL    ---     0.180 *LICE_15044.C1 to *LICE_15044.F1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Datapath_i/input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0/SLICE_15044
+ROUTE         4   e 0.419 *LICE_15044.F1 to  SLICE_6143.D1 cnn_top_inst.u_cnn.PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0.Datapath_i.input_1_bambu_artificial_ParmMgr_Read_fifo_modgen_1326_i0.active_N_13_mux_i_0_a_4_a_117_140
+CTOF_DEL    ---     0.180  SLICE_6143.D1 to  SLICE_6143.F1 SLICE_6143
+ROUTE       718   e 0.419  SLICE_6143.F1 to *LICE_17531.A0 cnn_input_read
+CTOF_DEL    ---     0.180 *LICE_17531.A0 to *LICE_17531.F0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_17531
+ROUTE         1   e 0.419 *LICE_17531.F0 to *LICE_14680.C1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/next_state_10_m
+CTOF_DEL    ---     0.180 *LICE_14680.C1 to *LICE_14680.F1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_14680
+ROUTE         1   e 0.419 *LICE_14680.F1 to *LICE_17264.D1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/next_state_539_3_iv_423_1[1]
+CTOF_DEL    ---     0.180 *LICE_17264.D1 to *LICE_17264.F1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_17264
+ROUTE         1   e 0.419 *LICE_17264.F1 to *LICE_16795.B0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/next_state_539_3_iv_423[1]
+CTOF_DEL    ---     0.180 *LICE_16795.B0 to *LICE_16795.F0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_16795
+ROUTE         1   e 0.419 *LICE_16795.F0 to *LICE_16814.C1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/next_state_539_3_iv_506[1]
+CTOF_DEL    ---     0.180 *LICE_16814.C1 to *LICE_16814.F1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_16814
+ROUTE         1   e 0.419 *LICE_16814.F1 to *LICE_18271.D1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/next_state_539_3_iv_530_N_3L3
+CTOF_DEL    ---     0.180 *LICE_18271.D1 to *LICE_18271.F1 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_18271
+ROUTE         2   e 0.419 *LICE_18271.F1 to */SLICE_409.B0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/next_state_539_3_iv_530[1]
+CTOF_DEL    ---     0.180 */SLICE_409.B0 to */SLICE_409.F0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/SLICE_409
+ROUTE         1   e 0.001 */SLICE_409.F0 to *SLICE_409.DI0 cnn_top_inst/u_cnn/PBI_Z9myprojectP8ac_fixedILi16ELi11ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_i0/Controller_i/N_6_1 (to clk_i_c)
+                  --------
+                   10.579   (32.7% logic, 67.3% route), 18 logic levels.
+
+Report:   96.441MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: CLOCK_TO_OUT PORT "scl" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ; Setup Analysis.
+            1 item scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 5.074ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              i2c_inst/i2c_core/scl_out  (from clk_i_c +)
+   Destination:    Port       Pad            scl
+
+   Data Path Delay:     3.007ns  (86.1% logic, 13.9% route), 2 logic levels.
+
+   Clock Path Delay:    0.419ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.419ns delay clk_i to i2c_inst/i2c_core/SLICE_6722 and
+      3.007ns delay i2c_inst/i2c_core/SLICE_6722 to scl (totaling 3.426ns) meets
+      8.500ns offset clk_i to scl by 5.074ns
+
+ Physical Path Details:
+
+      Clock path clk_i to i2c_inst/i2c_core/SLICE_6722:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 0.419      E17.PADDI to *LICE_6722.CLK clk_i_c
+                  --------
+                    0.419   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path i2c_inst/i2c_core/SLICE_6722 to scl:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395 *LICE_6722.CLK to *SLICE_6722.Q0 i2c_inst/i2c_core/SLICE_6722 (from clk_i_c)
+ROUTE         5   e 0.419 *SLICE_6722.Q0 to      D15.PADDO scl_c
+DOPAD_DEL   ---     2.193      D15.PADDO to        D15.PAD scl
+                  --------
+                    3.007   (86.1% logic, 13.9% route), 2 logic levels.
+
+Report:    3.426ns is the minimum offset for this preference.
+
+
+================================================================================
+Preference: CLOCK_TO_OUT PORT "sda" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ; Setup Analysis.
+            1 item scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 5.074ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              i2c_inst/i2c_core/sda_out  (from clk_i_c +)
+   Destination:    Port       Pad            sda
+
+   Data Path Delay:     3.007ns  (86.1% logic, 13.9% route), 2 logic levels.
+
+   Clock Path Delay:    0.419ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.419ns delay clk_i to i2c_inst/i2c_core/SLICE_6724 and
+      3.007ns delay i2c_inst/i2c_core/SLICE_6724 to sda (totaling 3.426ns) meets
+      8.500ns offset clk_i to sda by 5.074ns
+
+ Physical Path Details:
+
+      Clock path clk_i to i2c_inst/i2c_core/SLICE_6724:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 0.419      E17.PADDI to *LICE_6724.CLK clk_i_c
+                  --------
+                    0.419   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path i2c_inst/i2c_core/SLICE_6724 to sda:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395 *LICE_6724.CLK to *SLICE_6724.Q0 i2c_inst/i2c_core/SLICE_6724 (from clk_i_c)
+ROUTE         3   e 0.419 *SLICE_6724.Q0 to      F15.PADDO sda_c
+DOPAD_DEL   ---     2.193      F15.PADDO to        F15.PAD sda
+                  --------
+                    3.007   (86.1% logic, 13.9% route), 2 logic levels.
+
+Report:    3.426ns is the minimum offset for this preference.
+
+
+================================================================================
+Preference: CLOCK_TO_OUT PORT "scl2" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ; Setup Analysis.
+            1 item scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 5.074ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              i2c_inst/i2c_core2/scl_out  (from clk_i_c +)
+   Destination:    Port       Pad            scl2
+
+   Data Path Delay:     3.007ns  (86.1% logic, 13.9% route), 2 logic levels.
+
+   Clock Path Delay:    0.419ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.419ns delay clk_i to i2c_inst/i2c_core2/SLICE_6721 and
+      3.007ns delay i2c_inst/i2c_core2/SLICE_6721 to scl2 (totaling 3.426ns) meets
+      8.500ns offset clk_i to scl2 by 5.074ns
+
+ Physical Path Details:
+
+      Clock path clk_i to i2c_inst/i2c_core2/SLICE_6721:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 0.419      E17.PADDI to *LICE_6721.CLK clk_i_c
+                  --------
+                    0.419   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path i2c_inst/i2c_core2/SLICE_6721 to scl2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395 *LICE_6721.CLK to *SLICE_6721.Q0 i2c_inst/i2c_core2/SLICE_6721 (from clk_i_c)
+ROUTE         6   e 0.419 *SLICE_6721.Q0 to      A14.PADDO scl2_c
+DOPAD_DEL   ---     2.193      A14.PADDO to        A14.PAD scl2
+                  --------
+                    3.007   (86.1% logic, 13.9% route), 2 logic levels.
+
+Report:    3.426ns is the minimum offset for this preference.
+
+
+================================================================================
+Preference: CLOCK_TO_OUT PORT "sda2" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ; Setup Analysis.
+            1 item scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 5.074ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              i2c_inst/i2c_core2/sda_out  (from clk_i_c +)
+   Destination:    Port       Pad            sda2
+
+   Data Path Delay:     3.007ns  (86.1% logic, 13.9% route), 2 logic levels.
+
+   Clock Path Delay:    0.419ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.419ns delay clk_i to i2c_inst/i2c_core2/SLICE_6723 and
+      3.007ns delay i2c_inst/i2c_core2/SLICE_6723 to sda2 (totaling 3.426ns) meets
+      8.500ns offset clk_i to sda2 by 5.074ns
+
+ Physical Path Details:
+
+      Clock path clk_i to i2c_inst/i2c_core2/SLICE_6723:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 0.419      E17.PADDI to *LICE_6723.CLK clk_i_c
+                  --------
+                    0.419   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path i2c_inst/i2c_core2/SLICE_6723 to sda2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.395 *LICE_6723.CLK to *SLICE_6723.Q0 i2c_inst/i2c_core2/SLICE_6723 (from clk_i_c)
+ROUTE         3   e 0.419 *SLICE_6723.Q0 to      B14.PADDO sda2_c
+DOPAD_DEL   ---     2.193      B14.PADDO to        B14.PAD sda2
+                  --------
+                    3.007   (86.1% logic, 13.9% route), 2 logic levels.
+
+Report:    3.426ns is the minimum offset for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY PORT "CSI2_sens_clk"          |             |             |
+148.500000 MHz ;                        |  148.500 MHz|  155.255 MHz|   2  
+                                        |             |             |
+FREQUENCY PORT "clk_i" 27.000000 MHz ;  |   27.000 MHz|   96.441 MHz|  18  
+                                        |             |             |
+CLOCK_TO_OUT PORT "scl" 8.500000 ns MIN |             |             |
+3.500000 ns CLKNET "clk_i_c" ; Setup    |             |             |
+Analysis.                               |     8.500 ns|     3.426 ns|   2  
+                                        |             |             |
+CLOCK_TO_OUT PORT "sda" 8.500000 ns MIN |             |             |
+3.500000 ns CLKNET "clk_i_c" ; Setup    |             |             |
+Analysis.                               |     8.500 ns|     3.426 ns|   2  
+                                        |             |             |
+CLOCK_TO_OUT PORT "scl2" 8.500000 ns    |             |             |
+MIN 3.500000 ns CLKNET "clk_i_c" ;      |             |             |
+Setup Analysis.                         |     8.500 ns|     3.426 ns|   2  
+                                        |             |             |
+CLOCK_TO_OUT PORT "sda2" 8.500000 ns    |             |             |
+MIN 3.500000 ns CLKNET "clk_i_c" ;      |             |             |
+Setup Analysis.                         |     8.500 ns|     3.426 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: sa5pht/rdcnt[9]   Source: sa5pht/SLICE_6718.Q0   Loads: 24
+   No transfer within this clock domain is found
+
+Clock Domain: sa5pht/lclk   Source: sa5pht/SLICE_18324.F0   Loads: 8
+   No transfer within this clock domain is found
+
+Clock Domain: clk_i_c   Source: clk_i.PAD   Loads: 5947
+   Covered under: FREQUENCY PORT "clk_i" 27.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: CSI2_sens_clk_c   Source: CSI2_sens_clk.PAD
+      Not reported because source and destination domains are unrelated.
+      To report these transfers please refer to preference CLKSKEWDIFF to define
+      external clock skew between clock ports.
+
+Clock Domain: CSI2_sens_clk_c   Source: CSI2_sens_clk.PAD   Loads: 672
+   Covered under: FREQUENCY PORT "CSI2_sens_clk" 148.500000 MHz ;
+
+   Data transfers from:
+   Clock Domain: clk_i_c   Source: clk_i.PAD
+      Not reported because source and destination domains are unrelated.
+      To report these transfers please refer to preference CLKSKEWDIFF to define
+      external clock skew between clock ports.
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 113319317 paths, 2 nets, and 126575 connections (99.07% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.1.454
+Tue May 26 12:56:09 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o Raw10toParallel_impl1.tw1 Raw10toParallel_impl1_map.ncd Raw10toParallel_impl1.prf 
+Design file:     Raw10toParallel_impl1_map.ncd
+Preference file: Raw10toParallel_impl1.prf
+Device,speed:    LFE5UM-85F,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+90 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+BLOCK JTAG PATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY PORT "CSI2_sens_clk" 148.500000 MHz ;
+            4096 items scored, 40 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.937ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              fv_i_0io  (from CSI2_sens_clk_c +)
+   Destination:    DP16KD     Port           image_pipe_inst/dcfifo_inst/sc_fifo_inst/pdp_ram_1_6_3(ASIC)  (to CSI2_sens_clk_c +)
+
+   Delay:               0.366ns  (45.6% logic, 54.4% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay CSI2_sens_fv_MGIOL to image_pipe_inst/dcfifo_inst/sc_fifo_inst/pdp_ram_1_6_3 exceeds
+      1.303ns LSRREC_HLD and
+      0.000ns delay constraint requirement (totaling 1.303ns) by 0.937ns
+
+ Physical Path Details:
+
+      Data path CSI2_sens_fv_MGIOL to image_pipe_inst/dcfifo_inst/sc_fifo_inst/pdp_ram_1_6_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2INP_DEL   ---     0.167 *_fv_MGIOL.CLK to *fv_MGIOL.INFF CSI2_sens_fv_MGIOL (from CSI2_sens_clk_c)
+ROUTE        68   e 0.199 *fv_MGIOL.INFF to *am_1_6_3.RSTB fv_i (to CSI2_sens_clk_c)
+                  --------
+                    0.366   (45.6% logic, 54.4% route), 1 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY PORT "clk_i" 27.000000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.103ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              i2c_inst/i2c_ctrl_inst/step_cnt[7]  (from clk_i_c +)
+   Destination:    FF         Data in        i2c_inst/i2c_ctrl_inst/step_cnt[7]  (to clk_i_c +)
+
+   Delay:               0.221ns  (73.8% logic, 26.2% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.221ns physical path delay i2c_inst/i2c_ctrl_inst/SLICE_6257 to i2c_inst/i2c_ctrl_inst/SLICE_6257 meets
+      0.118ns M_HLD and
+      0.000ns delay constraint requirement (totaling 0.118ns) by 0.103ns
+
+ Physical Path Details:
+
+      Data path i2c_inst/i2c_ctrl_inst/SLICE_6257 to i2c_inst/i2c_ctrl_inst/SLICE_6257:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.163 *LICE_6257.CLK to *SLICE_6257.Q1 i2c_inst/i2c_ctrl_inst/SLICE_6257 (from clk_i_c)
+ROUTE         4   e 0.058 *SLICE_6257.Q1 to *SLICE_6257.M1 i2c_inst/i2c_ctrl_inst/step_cnt[7] (to clk_i_c)
+                  --------
+                    0.221   (73.8% logic, 26.2% route), 1 logic levels.
+
+
+================================================================================
+Preference: CLOCK_TO_OUT PORT "scl" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ;
+            1 item scored, 1 timing error detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path exceeds requirements by 1.476ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              i2c_inst/i2c_core/scl_out  (from clk_i_c +)
+   Destination:    Port       Pad            scl
+
+   Data Path Delay:     1.825ns  (89.1% logic, 10.9% route), 2 logic levels.
+
+   Clock Path Delay:    0.199ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.199ns delay clk_i to i2c_inst/i2c_core/SLICE_6722 and
+      1.825ns delay i2c_inst/i2c_core/SLICE_6722 to scl (totaling 2.024ns) exceeds
+      3.500ns hold offset clk_i to scl by 1.476ns
+
+ Physical Path Details:
+
+      Clock path clk_i to i2c_inst/i2c_core/SLICE_6722:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 0.199      E17.PADDI to *LICE_6722.CLK clk_i_c
+                  --------
+                    0.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path i2c_inst/i2c_core/SLICE_6722 to scl:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164 *LICE_6722.CLK to *SLICE_6722.Q0 i2c_inst/i2c_core/SLICE_6722 (from clk_i_c)
+ROUTE         5   e 0.199 *SLICE_6722.Q0 to      D15.PADDO scl_c
+DOPAD_DEL   ---     1.462      D15.PADDO to        D15.PAD scl
+                  --------
+                    1.825   (89.1% logic, 10.9% route), 2 logic levels.
+
+Warning:   2.024ns is the maximum offset for this preference.
+
+
+================================================================================
+Preference: CLOCK_TO_OUT PORT "sda" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ;
+            1 item scored, 1 timing error detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path exceeds requirements by 1.476ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              i2c_inst/i2c_core/sda_out  (from clk_i_c +)
+   Destination:    Port       Pad            sda
+
+   Data Path Delay:     1.825ns  (89.1% logic, 10.9% route), 2 logic levels.
+
+   Clock Path Delay:    0.199ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.199ns delay clk_i to i2c_inst/i2c_core/SLICE_6724 and
+      1.825ns delay i2c_inst/i2c_core/SLICE_6724 to sda (totaling 2.024ns) exceeds
+      3.500ns hold offset clk_i to sda by 1.476ns
+
+ Physical Path Details:
+
+      Clock path clk_i to i2c_inst/i2c_core/SLICE_6724:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 0.199      E17.PADDI to *LICE_6724.CLK clk_i_c
+                  --------
+                    0.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path i2c_inst/i2c_core/SLICE_6724 to sda:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164 *LICE_6724.CLK to *SLICE_6724.Q0 i2c_inst/i2c_core/SLICE_6724 (from clk_i_c)
+ROUTE         3   e 0.199 *SLICE_6724.Q0 to      F15.PADDO sda_c
+DOPAD_DEL   ---     1.462      F15.PADDO to        F15.PAD sda
+                  --------
+                    1.825   (89.1% logic, 10.9% route), 2 logic levels.
+
+Warning:   2.024ns is the maximum offset for this preference.
+
+
+================================================================================
+Preference: CLOCK_TO_OUT PORT "scl2" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ;
+            1 item scored, 1 timing error detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path exceeds requirements by 1.476ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              i2c_inst/i2c_core2/scl_out  (from clk_i_c +)
+   Destination:    Port       Pad            scl2
+
+   Data Path Delay:     1.825ns  (89.1% logic, 10.9% route), 2 logic levels.
+
+   Clock Path Delay:    0.199ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.199ns delay clk_i to i2c_inst/i2c_core2/SLICE_6721 and
+      1.825ns delay i2c_inst/i2c_core2/SLICE_6721 to scl2 (totaling 2.024ns) exceeds
+      3.500ns hold offset clk_i to scl2 by 1.476ns
+
+ Physical Path Details:
+
+      Clock path clk_i to i2c_inst/i2c_core2/SLICE_6721:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 0.199      E17.PADDI to *LICE_6721.CLK clk_i_c
+                  --------
+                    0.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path i2c_inst/i2c_core2/SLICE_6721 to scl2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164 *LICE_6721.CLK to *SLICE_6721.Q0 i2c_inst/i2c_core2/SLICE_6721 (from clk_i_c)
+ROUTE         6   e 0.199 *SLICE_6721.Q0 to      A14.PADDO scl2_c
+DOPAD_DEL   ---     1.462      A14.PADDO to        A14.PAD scl2
+                  --------
+                    1.825   (89.1% logic, 10.9% route), 2 logic levels.
+
+Warning:   2.024ns is the maximum offset for this preference.
+
+
+================================================================================
+Preference: CLOCK_TO_OUT PORT "sda2" 8.500000 ns MIN 3.500000 ns CLKNET "clk_i_c" ;
+            1 item scored, 1 timing error detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path exceeds requirements by 1.476ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              i2c_inst/i2c_core2/sda_out  (from clk_i_c +)
+   Destination:    Port       Pad            sda2
+
+   Data Path Delay:     1.825ns  (89.1% logic, 10.9% route), 2 logic levels.
+
+   Clock Path Delay:    0.199ns  (0.0% logic, 100.0% route), 0 logic levels.
+
+ Constraint Details:
+      0.199ns delay clk_i to i2c_inst/i2c_core2/SLICE_6723 and
+      1.825ns delay i2c_inst/i2c_core2/SLICE_6723 to sda2 (totaling 2.024ns) exceeds
+      3.500ns hold offset clk_i to sda2 by 1.476ns
+
+ Physical Path Details:
+
+      Clock path clk_i to i2c_inst/i2c_core2/SLICE_6723:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE       999   e 0.199      E17.PADDI to *LICE_6723.CLK clk_i_c
+                  --------
+                    0.199   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Data path i2c_inst/i2c_core2/SLICE_6723 to sda2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.164 *LICE_6723.CLK to *SLICE_6723.Q0 i2c_inst/i2c_core2/SLICE_6723 (from clk_i_c)
+ROUTE         3   e 0.199 *SLICE_6723.Q0 to      B14.PADDO sda2_c
+DOPAD_DEL   ---     1.462      B14.PADDO to        B14.PAD sda2
+                  --------
+                    1.825   (89.1% logic, 10.9% route), 2 logic levels.
+
+Warning:   2.024ns is the maximum offset for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY PORT "CSI2_sens_clk"          |             |             |
+148.500000 MHz ;                        |            -|            -|   1 *
+                                        |             |             |
+FREQUENCY PORT "clk_i" 27.000000 MHz ;  |            -|            -|   1  
+                                        |             |             |
+CLOCK_TO_OUT PORT "scl" 8.500000 ns MIN |             |             |
+3.500000 ns CLKNET "clk_i_c" ;          |     3.500 ns|     2.024 ns|   2 *
+                                        |             |             |
+CLOCK_TO_OUT PORT "sda" 8.500000 ns MIN |             |             |
+3.500000 ns CLKNET "clk_i_c" ;          |     3.500 ns|     2.024 ns|   2 *
+                                        |             |             |
+CLOCK_TO_OUT PORT "scl2" 8.500000 ns    |             |             |
+MIN 3.500000 ns CLKNET "clk_i_c" ;      |     3.500 ns|     2.024 ns|   2 *
+                                        |             |             |
+CLOCK_TO_OUT PORT "sda2" 8.500000 ns    |             |             |
+MIN 3.500000 ns CLKNET "clk_i_c" ;      |     3.500 ns|     2.024 ns|   2 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+5 preferences(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+fv_i                                    |      68|      40|     90.91%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: sa5pht/rdcnt[9]   Source: sa5pht/SLICE_6718.Q0   Loads: 24
+   No transfer within this clock domain is found
+
+Clock Domain: sa5pht/lclk   Source: sa5pht/SLICE_18324.F0   Loads: 8
+   No transfer within this clock domain is found
+
+Clock Domain: clk_i_c   Source: clk_i.PAD   Loads: 5947
+   Covered under: FREQUENCY PORT "clk_i" 27.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: CSI2_sens_clk_c   Source: CSI2_sens_clk.PAD
+      Not reported because source and destination domains are unrelated.
+      To report these transfers please refer to preference CLKSKEWDIFF to define
+      external clock skew between clock ports.
+
+Clock Domain: CSI2_sens_clk_c   Source: CSI2_sens_clk.PAD   Loads: 672
+   Covered under: FREQUENCY PORT "CSI2_sens_clk" 148.500000 MHz ;
+
+   Data transfers from:
+   Clock Domain: clk_i_c   Source: clk_i.PAD
+      Not reported because source and destination domains are unrelated.
+      To report these transfers please refer to preference CLKSKEWDIFF to define
+      external clock skew between clock ports.
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 44  Score: 42644
+Cumulative negative slack: 42644
+
+Constraints cover 113319317 paths, 2 nets, and 127201 connections (99.56% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 44 (hold)
+Score: 0 (setup), 42644 (hold)
+Cumulative negative slack: 42644 (0+42644)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

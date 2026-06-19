@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1780414289"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1780414037">
+            <Task name="Map" build_result="2" update_result="0" update_time="1780414037"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1780156813"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1780414262">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1780414262"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1780414271"/>
+            <Task name="IOTiming" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1780413988">
+            <Task name="Synplify_Synthesis" build_result="2" update_result="0" update_time="1780413988"/>
+        </Milestone>
+        <Milestone name="Translate" build_result="2" build_time="1780414005">
+            <Task name="Translate" build_result="2" update_result="0" update_time="1780414005"/>
+        </Milestone>
+        <Report name=".vdbs/Raw10toParallel_impl1_map.vdb" last_build_time="0" last_build_size="0"/>
+        <Report name="Raw10toParallel_impl1.bgn" last_build_time="1780414289" last_build_size="4596"/>
+        <Report name="Raw10toParallel_impl1.bit" last_build_time="1780414289" last_build_size="1951221"/>
+        <Report name="Raw10toParallel_impl1.edi" last_build_time="1780413829" last_build_size="36271336"/>
+        <Report name="Raw10toParallel_impl1.lsedata" last_build_time="1780153805" last_build_size="126751507"/>
+        <Report name="Raw10toParallel_impl1.ncd" last_build_time="1780414262" last_build_size="35643792"/>
+        <Report name="Raw10toParallel_impl1.ngd" last_build_time="1780414005" last_build_size="24871578"/>
+        <Report name="Raw10toParallel_impl1.tw1" last_build_time="1779792971" last_build_size="37720"/>
+        <Report name="Raw10toParallel_impl1.twr" last_build_time="1780414271" last_build_size="198680"/>
+        <Report name="Raw10toParallel_impl1_map.ncd" last_build_time="1780414036" last_build_size="26814021"/>
+    </Strategy>
+</BuildStatus>

@@ -1,0 +1,292 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG334 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/dp_ram.v":1:13:1:25|Read directive translate_off.
+@N: CG333 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/dp_ram.v":3:13:3:24|Read directive translate_on.
+@N: CG334 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/Gamma.v":1:13:1:25|Read directive translate_off.
+@N: CG333 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/Gamma.v":3:13:3:24|Read directive translate_on.
+@N: CG334 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/image_fifo.v":1:13:1:25|Read directive translate_off.
+@N: CG333 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/image_fifo.v":3:13:3:24|Read directive translate_on.
+@N: CG334 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/CSC.v":1:13:1:25|Read directive translate_off.
+@N: CG333 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/CSC.v":3:13:3:24|Read directive translate_on.
+@N|stack limit increased to max
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/blanking_adjustment.v":34:7:34:25|Synthesizing module blanking_adjustment in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":25:7:25:10|Synthesizing module AND2 in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":367:7:367:9|Synthesizing module INV in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":810:7:810:10|Synthesizing module XOR2 in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":710:7:710:14|Synthesizing module ROM16X1A in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":866:7:866:12|Synthesizing module DP16KD in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":119:7:119:13|Synthesizing module FD1P3DX in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":160:7:160:13|Synthesizing module FD1S3BX in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":168:7:168:13|Synthesizing module FD1S3DX in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":76:7:76:11|Synthesizing module CCU2C in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":757:7:757:9|Synthesizing module VHI in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":761:7:761:9|Synthesizing module VLO in library work.
+@N: CG364 :"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":458:7:458:11|Synthesizing module MUX21 in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/sc_fifo/sc_fifo.v":8:7:8:13|Synthesizing module sc_fifo in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/image_fifo.v":11:7:11:16|Synthesizing module image_fifo in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/ab.v":34:7:34:8|Synthesizing module ab in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/debayer_dpram/debayer_dpram.v":8:7:8:19|Synthesizing module debayer_dpram in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v":34:7:34:13|Synthesizing module debayer in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/colorspace/colorspace_bb.v":1:7:1:16|Synthesizing module colorspace in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/colorspace/colorspace_top.v":3:7:3:20|Synthesizing module colorspace_top in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/CSC.v":11:7:11:9|Synthesizing module CSC in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/color.v":34:7:34:11|Synthesizing module color in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/gammaCorrector/gammaCorrector_bb.v":1:7:1:20|Synthesizing module gammaCorrector in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/Gamma.v":11:7:11:11|Synthesizing module Gamma in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/gamma_correction.v":34:7:34:22|Synthesizing module gamma_correction in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/image_pipe.v":34:7:34:16|Synthesizing module image_pipe in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/frame_grabber.v":16:7:16:19|Synthesizing module frame_grabber in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/input_bram.v":17:7:17:16|Synthesizing module input_bram in library work.
+@N: CL134 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/input_bram.v":31:4:31:9|Found RAM ram, depth=1024, width=12
+@N: CG364 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/cnn_wrapper.v":21:7:21:17|Synthesizing module cnn_wrapper in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":52986:7:52986:83|Synthesizing module controller_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3807:7:3807:15|Synthesizing module MUX2_GATE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3807:7:3807:15|Synthesizing module MUX2_GATE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3807:7:3807:15|Synthesizing module MUX2_GATE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3807:7:3807:15|Synthesizing module MUX2_GATE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3807:7:3807:15|Synthesizing module MUX2_GATE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3807:7:3807:15|Synthesizing module MUX2_GATE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3807:7:3807:15|Synthesizing module MUX2_GATE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3807:7:3807:15|Synthesizing module MUX2_GATE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3807:7:3807:15|Synthesizing module MUX2_GATE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":689:7:689:23|Synthesizing module STD_NRNW_BRAM_GEN in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":570:7:570:17|Synthesizing module STD_DP_BRAM in library work.
+@N: CG440 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":603:29:603:34|Allowing writes in multiple processes for multi-port RAM
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":673:62:673:126|Found multi-write port RAM memory, number of write ports=2, depth=1024, width=16
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":664:62:664:126|Found multi-write port RAM memory, number of write ports=2, depth=1024, width=16
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":802:7:802:35|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS_BASE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1072:7:1072:30|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1286:7:1286:33|Synthesizing module ARRAY_1D_STD_DISTRAM_NN_SDS in library work.
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1506:48:1506:107|Found multi-write port RAM memory, number of write ports=2, depth=16, width=16
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1506:48:1506:107|Found multi-write port RAM memory, number of write ports=2, depth=16, width=16
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":689:7:689:23|Synthesizing module STD_NRNW_BRAM_GEN in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":570:7:570:17|Synthesizing module STD_DP_BRAM in library work.
+@N: CG440 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":603:29:603:34|Allowing writes in multiple processes for multi-port RAM
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":673:62:673:126|Found multi-write port RAM memory, number of write ports=2, depth=64, width=16
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":664:62:664:126|Found multi-write port RAM memory, number of write ports=2, depth=64, width=16
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":802:7:802:35|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS_BASE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1072:7:1072:30|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":689:7:689:23|Synthesizing module STD_NRNW_BRAM_GEN in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":570:7:570:17|Synthesizing module STD_DP_BRAM in library work.
+@N: CG440 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":603:29:603:34|Allowing writes in multiple processes for multi-port RAM
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":673:62:673:126|Found multi-write port RAM memory, number of write ports=2, depth=256, width=16
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":664:62:664:126|Found multi-write port RAM memory, number of write ports=2, depth=256, width=16
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":802:7:802:35|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS_BASE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1072:7:1072:30|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":689:7:689:23|Synthesizing module STD_NRNW_BRAM_GEN in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":570:7:570:17|Synthesizing module STD_DP_BRAM in library work.
+@N: CG440 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":603:29:603:34|Allowing writes in multiple processes for multi-port RAM
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":673:62:673:126|Found multi-write port RAM memory, number of write ports=2, depth=128, width=16
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":664:62:664:126|Found multi-write port RAM memory, number of write ports=2, depth=128, width=16
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":802:7:802:35|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS_BASE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1072:7:1072:30|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":689:7:689:23|Synthesizing module STD_NRNW_BRAM_GEN in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":570:7:570:17|Synthesizing module STD_DP_BRAM in library work.
+@N: CG440 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":603:29:603:34|Allowing writes in multiple processes for multi-port RAM
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":673:62:673:126|Found multi-write port RAM memory, number of write ports=2, depth=128, width=16
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":664:62:664:126|Found multi-write port RAM memory, number of write ports=2, depth=128, width=16
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":802:7:802:35|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS_BASE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1072:7:1072:30|Synthesizing module ARRAY_1D_STD_BRAM_NN_SDS in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1286:7:1286:33|Synthesizing module ARRAY_1D_STD_DISTRAM_NN_SDS in library work.
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1506:48:1506:107|Found multi-write port RAM memory, number of write ports=2, depth=4, width=32
+@N: CL214 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1506:48:1506:107|Found multi-write port RAM memory, number of write ports=2, depth=4, width=32
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2285:7:2285:25|Synthesizing module BRAM_MEMORY_NN_CORE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2126:7:2126:38|Synthesizing module TRUE_DUAL_PORT_BYTE_ENABLING_RAM in library work.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[15] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[14] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[13] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[12] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[11] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[10] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[15] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[14] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[13] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[12] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[11] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[10] is always 0.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1553:7:1553:31|Synthesizing module ADDRESS_DECODING_LOGIC_NN in library work.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1941:2:1941:7|Register bit delayed_byte_offset[1] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1941:2:1941:7|Register bit delayed_byte_offset[3] is always 0.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2396:7:2396:29|Synthesizing module ARRAY_1D_STD_BRAM_NN_SP in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2285:7:2285:25|Synthesizing module BRAM_MEMORY_NN_CORE in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2126:7:2126:38|Synthesizing module TRUE_DUAL_PORT_BYTE_ENABLING_RAM in library work.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[15] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[14] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[13] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[12] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[11] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[10] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[9] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[8] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[7] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[6] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[5] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[4] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[3] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[2] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[1] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2186:2:2186:7|Register bit dout_a[0] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[15] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[14] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[13] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[12] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[11] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[10] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[9] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[8] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[7] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[6] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[5] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[4] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[3] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[2] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[1] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2223:2:2223:7|Register bit dout_b[0] is always 0.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2683:7:2683:26|Synthesizing module ARRAY_1D_STD_BRAM_NN in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3728:7:3728:16|Synthesizing module bus_merger in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3728:7:3728:16|Synthesizing module bus_merger in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2951:7:2951:25|Synthesizing module UUdata_converter_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3496:7:3496:20|Synthesizing module ui_gep_node_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2855:7:2855:18|Synthesizing module addr_node_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3390:7:3390:27|Synthesizing module ui_concat_bit_node_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3658:7:3658:20|Synthesizing module ui_shr_node_FU in library work.
+@N: CG364 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3614:7:3614:20|Synthesizing module ui_shl_node_FU in library work.
+@N: CL201 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_core.v":249:3:249:8|Trying to extract state machine for register i2c_cs.
+@N: CL159 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_core.v":23:21:23:30|Input addr_reg_L is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_core.v":25:21:25:29|Input data_wr_L is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_ctrl.v":21:21:21:28|Input data_rdy is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_ctrl.v":22:21:22:27|Input data_rd is unused.
+@N: CL201 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_core.v":249:3:249:8|Trying to extract state machine for register i2c_cs.
+@N: CL159 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_core.v":25:21:25:29|Input data_wr_L is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_ctrl.v":21:21:21:28|Input data_rdy is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_ctrl.v":22:21:22:27|Input data_rd is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":2190:8:2190:24|Input wrenable_reg_1013 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":2283:8:2283:24|Input wrenable_reg_1098 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":2289:8:2289:24|Input wrenable_reg_1102 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":66:8:66:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":118:26:118:28|Input in1 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":119:26:119:28|Input in2 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3159:33:3159:35|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3402:26:3402:28|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3402:26:3402:28|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3402:26:3402:28|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3402:26:3402:28|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3402:26:3402:28|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3402:26:3402:28|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3402:26:3402:28|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":58:26:58:28|Input in1 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":59:26:59:28|Input in2 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":60:26:60:28|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":3402:26:3402:28|Input in3 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2152:8:2152:12|Input clock is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2153:8:2153:18|Input bram_write0 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2154:8:2154:18|Input bram_write1 is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2155:36:2155:48|Input memory_addr_a is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2156:36:2156:48|Input memory_addr_b is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2157:45:2157:66|Input din_value_aggregated_a is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2158:45:2158:66|Input din_value_aggregated_b is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2159:27:2159:30|Input be_a is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":2160:27:2160:30|Input be_b is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1627:8:1627:12|Input reset is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1631:32:1631:39|Input sel_LOAD is unused.
+@N: CL159 :"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1633:32:1633:39|Input S_oe_ram is unused.
+@N: CL201 :"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":57861:2:57861:7|Trying to extract state machine for register present_state.
+@N: CL201 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/cnn_wrapper.v":53:0:53:5|Trying to extract state machine for register state.
+@N: CL135 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/frame_grabber.v":105:0:105:5|Found sequential shift sample_last_s2 with address depth of 3 words and data bit width of 1.
+@N: CL135 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/frame_grabber.v":105:0:105:5|Found sequential shift sample_addr_s2 with address depth of 3 words and data bit width of 10.
+@N: CL135 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v":230:0:230:5|Found sequential shift select3 with address depth of 3 words and data bit width of 2.
+@N: CL189 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v":200:0:200:5|Register bit C[12] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v":200:0:200:5|Register bit N[12] is always 0.
+@N: CL189 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v":200:0:200:5|Register bit S[12] is always 0.
+@N: CL135 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v":275:0:275:5|Found sequential shift de with address depth of 3 words and data bit width of 1.
+@N: CL135 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v":275:0:275:5|Found sequential shift hsync with address depth of 3 words and data bit width of 1.
+@N: CL135 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v":275:0:275:5|Found sequential shift vsync with address depth of 3 words and data bit width of 1.
+@N|Running in 64-bit mode
+

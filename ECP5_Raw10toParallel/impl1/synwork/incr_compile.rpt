@@ -1,0 +1,166 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: R-2021.03L-SP1
+Install: /usr/local/diamond/3.12/synpbase
+OS: Ubuntu 20.04.6 LTS
+Hostname: ferrandi-1
+max virtual memory: unlimited (bytes)
+max user processes: 1030255
+max stack size: unlimited (bytes)
+
+
+Implementation : impl1
+Synopsys HDL compiler and linker, Version comp202103synp2, Build 093R, Built Aug 10 2021 09:23:04, @3930113
+
+Modified Files: 1
+FID:  path (prevtimestamp, timestamp)
+92       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/text_overlay.v (2026-06-02 16:53:36, 2026-06-02 16:56:45)
+
+*******************************************************************
+Modules that may have changed as a result of file changes: 1
+MID:  lib.cell.view
+68       work.text_overlay.verilog may have changed because the following files changed:
+                        /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/text_overlay.v (2026-06-02 16:53:36, 2026-06-02 16:56:45) <-- (module definition)
+
+*******************************************************************
+Unmodified files: 45
+FID:  path (timestamp)
+74       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/RAW10toParallel.v (2026-05-30 19:58:38)
+75       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/ab.v (2026-05-27 09:51:56)
+76       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/blanking_adjustment.v (2026-05-27 09:51:56)
+77       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/CSC.v (2026-05-27 09:51:56)
+78       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/colorspace/colorspace_bb.v (2026-05-27 09:51:56)
+79       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/colorspace/colorspace_top.v (2026-05-27 09:51:56)
+80       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/Gamma.v (2026-05-27 09:51:56)
+81       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/gammaCorrector/gammaCorrector_bb.v (2026-05-27 09:51:56)
+82       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/gammaCorrector/gammaCorrector_top.v (2026-05-27 09:51:56)
+83       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/debayer_dpram/debayer_dpram.v (2026-05-27 09:51:56)
+84       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/dp_ram.v (2026-05-27 09:51:56)
+85       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/rb_ram/rb_ram.v (2026-05-27 09:51:56)
+86       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/image_fifo.v (2026-05-27 09:51:56)
+87       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/sc_fifo/sc_fifo.v (2026-05-27 09:51:56)
+88       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/cnn_wrapper.v (2026-05-30 19:58:30)
+89       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/frame_grabber.v (2026-05-30 19:59:17)
+90       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/generated/cnn_top.v (2026-05-30 20:05:00)
+91       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/input_bram.v (2026-05-30 19:54:43)
+93       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/color.v (2026-05-27 09:51:56)
+94       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v (2026-05-27 09:51:56)
+95       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/gamma_correction.v (2026-05-27 09:51:56)
+96       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_core.v (2026-05-27 09:51:56)
+97       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_ctrl.v (2026-05-27 09:51:56)
+98       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_top.v (2026-05-27 09:51:56)
+99       /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_core.v (2026-05-27 09:51:56)
+100      /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_ctrl.v (2026-05-27 09:51:56)
+101      /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_top.v (2026-05-27 09:51:56)
+102      /home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/image_pipe.v (2026-05-30 18:51:08)
+114      /home/heidarabadi/alis_model/hls_full_model_simple32/0_array_495267.mem (2026-05-30 17:05:54)
+115      /home/heidarabadi/alis_model/hls_full_model_simple32/array_490354.mem (2026-05-30 17:05:54)
+116      /home/heidarabadi/alis_model/hls_full_model_simple32/array_490420.mem (2026-05-30 17:05:54)
+117      /home/heidarabadi/alis_model/hls_full_model_simple32/array_490499.mem (2026-05-30 17:05:54)
+118      /home/heidarabadi/alis_model/hls_full_model_simple32/array_490504.mem (2026-05-30 17:05:54)
+119      /home/heidarabadi/alis_model/hls_full_model_simple32/array_490509.mem (2026-05-30 17:05:54)
+120      /home/heidarabadi/alis_model/hls_full_model_simple32/array_490514.mem (2026-05-30 17:05:54)
+121      /home/heidarabadi/alis_model/hls_full_model_simple32/array_490519.mem (2026-05-30 17:05:54)
+122      /home/heidarabadi/alis_model/hls_full_model_simple32/array_495267.mem (2026-05-30 17:05:54)
+112      /home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v (2026-05-30 17:05:55)
+113      /home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v (2026-05-30 17:05:55)
+31       /usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v (2021-10-18 00:15:03)
+32       /usr/local/diamond/3.12/synpbase/lib/lucent/pmi_def.v (2021-10-18 00:15:04)
+33       /usr/local/diamond/3.12/synpbase/lib/vlog/hypermods.v (2021-10-18 00:15:13)
+34       /usr/local/diamond/3.12/synpbase/lib/vlog/scemi_objects.v (2021-10-18 00:15:13)
+35       /usr/local/diamond/3.12/synpbase/lib/vlog/scemi_pipes.svh (2021-10-18 00:15:13)
+36       /usr/local/diamond/3.12/synpbase/lib/vlog/umr_capim.v (2021-10-18 00:15:13)
+
+*******************************************************************
+Unchanged modules: 85
+MID:  lib.cell.view
+0        work.ADDRESS_DECODING_LOGIC_NN.verilog
+1        work.ARRAY_1D_STD_BRAM_NN.verilog
+2        work.ARRAY_1D_STD_BRAM_NN_SDS.verilog
+3        work.ARRAY_1D_STD_BRAM_NN_SDS_BASE.verilog
+4        work.ARRAY_1D_STD_BRAM_NN_SP.verilog
+5        work.ARRAY_1D_STD_DISTRAM_NN_SDS.verilog
+7        work.BRAM_MEMORY_CORE_SMALL.verilog
+8        work.BRAM_MEMORY_NN_CORE.verilog
+9        work.CSC.verilog
+10       work.Gamma.verilog
+11       work.IIdata_converter_FU.verilog
+12       work.IUdata_converter_FU.verilog
+13       work.MUX2_GATE.verilog
+81       work.PBI_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s.verilog
+15       work.RAW10toParallel.verilog
+16       work.STD_DP_BRAM.verilog
+17       work.STD_NRNW_BRAM_GEN.verilog
+18       work.STD_NRNW_BRAM_XOR.verilog
+19       work.STD_NR_BRAM.verilog
+20       work.STD_SDP_BRAM.verilog
+21       work.STD_SDP_BRAMFW.verilog
+22       work.TRUE_DUAL_PORT_BYTE_ENABLING_RAM.verilog
+23       work.UIdata_converter_FU.verilog
+24       work.UUdata_converter_FU.verilog
+25       work.ab.verilog
+26       work.add_node_FU.verilog
+27       work.addr_node_FU.verilog
+82       work.and_node_FU.verilog
+28       work.blanking_adjustment.verilog
+29       work.bus_merger.verilog
+30       work.cnn_top.verilog
+31       work.cnn_wrapper.verilog
+32       work.color.verilog
+33       work.colorspace.verilog
+34       work.colorspace_top.verilog
+83       work.concat_bit_node_FU.verilog
+84       work.controller_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s.verilog
+85       work.datapath_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s.verilog
+37       work.debayer.verilog
+38       work.debayer_dpram.verilog
+39       work.dp_ram.verilog
+40       work.frame_grabber.verilog
+41       work.gammaCorrector.verilog
+42       work.gammaCorrector_top.verilog
+43       work.gamma_correction.verilog
+44       work.hdmi_i2c_core.verilog
+45       work.hdmi_i2c_ctrl.verilog
+46       work.hdmi_i2c_top.verilog
+47       work.i2c_core.verilog
+48       work.i2c_ctrl.verilog
+49       work.i2c_top.verilog
+50       work.image_fifo.verilog
+51       work.image_pipe.verilog
+52       work.input_1_bambu_artificial_ParmMgr_Read_fifo_modgen.verilog
+53       work.input_bram.verilog
+54       work.join_signal.verilog
+91       work.layer10_out_bambu_artificial_ParmMgr_Write_fifo_modgen.verilog
+56       work.lut_node_FU.verilog
+57       work.max_node_FU.verilog
+59       work.multi_read_cond_FU.verilog
+87       work.p_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s.verilog
+61       work.rb_ram.verilog
+62       work.register_AR.verilog
+63       work.register_SE.verilog
+64       work.sc_fifo.verilog
+65       work.select_node_FU.verilog
+88       work.shl_node_FU.verilog
+66       work.shr_node_FU.verilog
+67       work.split_signal.verilog
+89       work.sub_node_FU.verilog
+69       work.ui_add_node_FU.verilog
+70       work.ui_and_node_FU.verilog
+71       work.ui_bitcast_node_FU.verilog
+72       work.ui_concat_bit_node_FU.verilog
+73       work.ui_eq_node_FU.verilog
+74       work.ui_extract_bit_node_FU.verilog
+75       work.ui_fshl_node_FU.verilog
+76       work.ui_gep_node_FU.verilog
+92       work.ui_lt_node_FU.verilog
+77       work.ui_min_node_FU.verilog
+93       work.ui_or_node_FU.verilog
+78       work.ui_select_node_FU.verilog
+79       work.ui_shl_node_FU.verilog
+80       work.ui_shr_node_FU.verilog
+90       work.ui_ternary_add_node_FU.verilog

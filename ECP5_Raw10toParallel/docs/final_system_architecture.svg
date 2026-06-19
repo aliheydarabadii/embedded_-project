@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="930" viewBox="0 0 1600 930" role="img" aria-labelledby="title desc">
+  <title id="title">Final system architecture diagram</title>
+  <desc id="desc">Architecture diagram for RAW10 video pipeline with implemented grayscale downsample preprocessing, HLS generated CNN accelerator, detection overlay, and HDMI output.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#1f2937"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#059669"/>
+    </marker>
+    <marker id="arrow-orange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M 0 0 L 12 6 L 0 12 z" fill="#d97706"/>
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 30px Arial, Helvetica, sans-serif; fill: #111827; }
+      .subtitle { font: 400 15px Arial, Helvetica, sans-serif; fill: #4b5563; }
+      .lane-title { font: 700 16px Arial, Helvetica, sans-serif; fill: #111827; }
+      .box-title { font: 700 15px Arial, Helvetica, sans-serif; fill: #111827; }
+      .box-text { font: 400 12px Arial, Helvetica, sans-serif; fill: #374151; }
+      .small { font: 400 11px Arial, Helvetica, sans-serif; fill: #4b5563; }
+      .note { font: 400 12px Arial, Helvetica, sans-serif; fill: #92400e; }
+      .box { stroke: #334155; stroke-width: 1.5; rx: 8; ry: 8; }
+      .orig { fill: #e0f2fe; }
+      .pre { fill: #dcfce7; }
+      .cnn { fill: #fef3c7; }
+      .out { fill: #ede9fe; }
+      .cfg { fill: #f1f5f9; }
+      .optional { fill: #fff7ed; stroke: #d97706; stroke-dasharray: 7 5; }
+      .group { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.4; rx: 12; ry: 12; }
+      .group-orig { fill: #eff6ff; }
+      .group-pre { fill: #f0fdf4; }
+      .group-cnn { fill: #fffbeb; }
+      .group-out { fill: #f5f3ff; }
+      .arrow { stroke: #1f2937; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+      .arrow-blue { stroke: #2563eb; stroke-width: 2.6; fill: none; marker-end: url(#arrow-blue); }
+      .arrow-green { stroke: #059669; stroke-width: 2.6; fill: none; marker-end: url(#arrow-green); }
+      .arrow-orange { stroke: #d97706; stroke-width: 2.3; fill: none; marker-end: url(#arrow-orange); stroke-dasharray: 7 5; }
+      .dash { stroke-dasharray: 7 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1600" height="930"/>
+
+  <text class="title" x="56" y="52">Final System Architecture</text>
+  <text class="subtitle" x="56" y="78">Original RAW10-to-RGB video pipeline with grayscale/downsample preprocessing, HLS-generated CNN accelerator, detection overlay, and HDMI output</text>
+
+  <!-- Main input and output blocks -->
+  <rect class="box orig" x="56" y="140" width="180" height="88"/>
+  <text class="box-title" x="146" y="166" text-anchor="middle">RAW10 Sensor Stream</text>
+  <text class="box-text" x="146" y="188" text-anchor="middle">CSI2_sens_clk</text>
+  <text class="box-text" x="146" y="205" text-anchor="middle">fv, lv, data[9:0]</text>
+
+  <rect class="box orig" x="276" y="140" width="160" height="88"/>
+  <text class="box-title" x="356" y="166" text-anchor="middle">Input Registers</text>
+  <text class="box-text" x="356" y="188" text-anchor="middle">fv_i, lv_i</text>
+  <text class="box-text" x="356" y="205" text-anchor="middle">{data_i, 2'b00}</text>
+
+  <!-- Original video pipeline group -->
+  <rect class="group group-orig" x="482" y="116" width="706" height="152"/>
+  <text class="lane-title" x="506" y="144">Original video / ISP modules</text>
+
+  <rect class="box orig" x="506" y="166" width="132" height="66"/>
+  <text class="box-title" x="572" y="190" text-anchor="middle">image_pipe</text>
+  <text class="box-text" x="572" y="210" text-anchor="middle">top ISP wrapper</text>
+
+  <rect class="box orig" x="666" y="166" width="144" height="66"/>
+  <text class="box-title" x="738" y="190" text-anchor="middle">blanking</text>
+  <text class="box-title" x="738" y="207" text-anchor="middle">adjustment</text>
+
+  <rect class="box orig" x="838" y="166" width="130" height="66"/>
+  <text class="box-title" x="903" y="190" text-anchor="middle">image_fifo</text>
+  <text class="box-text" x="903" y="210" text-anchor="middle">retiming</text>
+
+  <rect class="box orig" x="996" y="166" width="86" height="66"/>
+  <text class="box-title" x="1039" y="198" text-anchor="middle">ab</text>
+
+  <rect class="box orig" x="1110" y="166" width="130" height="66"/>
+  <text class="box-title" x="1175" y="190" text-anchor="middle">debayer</text>
+  <text class="box-text" x="1175" y="210" text-anchor="middle">Bayer to RGB</text>
+
+  <rect class="box orig" x="1268" y="166" width="116" height="66"/>
+  <text class="box-title" x="1326" y="190" text-anchor="middle">color</text>
+  <text class="box-text" x="1326" y="210" text-anchor="middle">correction</text>
+
+  <rect class="box orig" x="1412" y="166" width="132" height="66"/>
+  <text class="box-title" x="1478" y="190" text-anchor="middle">gamma</text>
+  <text class="box-title" x="1478" y="207" text-anchor="middle">correction</text>
+
+  <!-- Post ISP stream hub -->
+  <rect class="box out" x="688" y="326" width="242" height="90"/>
+  <text class="box-title" x="809" y="352" text-anchor="middle">Post-ISP RGB Stream</text>
+  <text class="box-text" x="809" y="374" text-anchor="middle">red_o, green_o, blue_o</text>
+  <text class="box-text" x="809" y="392" text-anchor="middle">hsync_o, vsync_o, de</text>
+
+  <!-- Custom preprocessing group -->
+  <rect class="group group-pre" x="128" y="476" width="910" height="178"/>
+  <text class="lane-title" x="152" y="504">Implemented custom preprocessing branch</text>
+
+  <rect class="box pre" x="156" y="530" width="208" height="84"/>
+  <text class="box-title" x="260" y="556" text-anchor="middle">frame_grabber</text>
+  <text class="box-text" x="260" y="578" text-anchor="middle">grayscale conversion</text>
+  <text class="box-text" x="260" y="596" text-anchor="middle">32x32 downsample</text>
+
+  <rect class="box pre" x="454" y="530" width="166" height="84"/>
+  <text class="box-title" x="537" y="556" text-anchor="middle">input_bram</text>
+  <text class="box-text" x="537" y="578" text-anchor="middle">patch buffer</text>
+  <text class="box-text" x="537" y="596" text-anchor="middle">1024 x 12-bit</text>
+
+  <rect class="box pre" x="710" y="530" width="124" height="84"/>
+  <text class="box-title" x="772" y="556" text-anchor="middle">CDC</text>
+  <text class="box-text" x="772" y="578" text-anchor="middle">video clk</text>
+  <text class="box-text" x="772" y="596" text-anchor="middle">to clk_i</text>
+
+  <!-- CNN group -->
+  <rect class="group group-cnn" x="1088" y="476" width="342" height="178"/>
+  <text class="lane-title" x="1112" y="504">HLS-generated CNN block</text>
+
+  <rect class="box cnn" x="1118" y="530" width="130" height="84"/>
+  <text class="box-title" x="1183" y="556" text-anchor="middle">cnn_wrapper</text>
+  <text class="box-text" x="1183" y="578" text-anchor="middle">BRAM to stream</text>
+  <text class="box-text" x="1183" y="596" text-anchor="middle">FIFO adapter</text>
+
+  <rect class="box cnn" x="1286" y="530" width="116" height="84"/>
+  <text class="box-title" x="1344" y="556" text-anchor="middle">cnn_top</text>
+  <text class="box-text" x="1344" y="578" text-anchor="middle">hls4ml /</text>
+  <text class="box-text" x="1344" y="596" text-anchor="middle">Bambu RTL</text>
+
+  <!-- Detection and overlay output group -->
+  <rect class="group group-out" x="866" y="712" width="642" height="126"/>
+  <text class="lane-title" x="890" y="740">Detection overlay and HDMI output</text>
+
+  <rect class="box out" x="894" y="764" width="160" height="56"/>
+  <text class="box-title" x="974" y="786" text-anchor="middle">Detection Output</text>
+  <text class="box-text" x="974" y="806" text-anchor="middle">valid + result</text>
+
+  <rect class="box out" x="1094" y="764" width="132" height="56"/>
+  <text class="box-title" x="1160" y="786" text-anchor="middle">text_overlay</text>
+  <text class="box-text" x="1160" y="806" text-anchor="middle">video + result</text>
+
+  <rect class="box out" x="1266" y="764" width="112" height="56"/>
+  <text class="box-title" x="1322" y="786" text-anchor="middle">Output</text>
+  <text class="box-title" x="1322" y="803" text-anchor="middle">registers</text>
+
+  <rect class="box out" x="1418" y="764" width="66" height="56"/>
+  <text class="box-title" x="1451" y="786" text-anchor="middle">HDMI</text>
+  <text class="box-text" x="1451" y="806" text-anchor="middle">video out</text>
+
+  <!-- Configuration blocks -->
+  <rect class="box cfg" x="56" y="754" width="172" height="72"/>
+  <text class="box-title" x="142" y="780" text-anchor="middle">i2c_top</text>
+  <text class="box-text" x="142" y="802" text-anchor="middle">sensor / CrossLink config</text>
+
+  <rect class="box cfg" x="268" y="754" width="172" height="72"/>
+  <text class="box-title" x="354" y="780" text-anchor="middle">hdmi_i2c_top</text>
+  <text class="box-text" x="354" y="802" text-anchor="middle">HDMI TX config</text>
+
+  <!-- Main arrows -->
+  <path class="arrow-blue" d="M 236 184 L 276 184"/>
+  <path class="arrow-blue" d="M 436 184 L 506 198"/>
+  <path class="arrow-blue" d="M 638 199 L 666 199"/>
+  <path class="arrow-blue" d="M 810 199 L 838 199"/>
+  <path class="arrow-blue" d="M 968 199 L 996 199"/>
+  <path class="arrow-blue" d="M 1082 199 L 1110 199"/>
+  <path class="arrow-blue" d="M 1240 199 L 1268 199"/>
+  <path class="arrow-blue" d="M 1384 199 L 1412 199"/>
+  <path class="arrow-blue" d="M 1478 232 C 1478 292 950 280 868 326"/>
+
+  <!-- Branch to preprocessing -->
+  <path class="arrow-green" d="M 688 374 C 520 384 318 430 260 530"/>
+  <path class="arrow-green" d="M 364 572 L 454 572"/>
+  <path class="arrow-green" d="M 620 572 L 710 572"/>
+  <path class="arrow-green" d="M 834 572 L 1118 572"/>
+  <path class="arrow-green" d="M 1248 572 L 1286 572"/>
+
+  <!-- Detection return -->
+  <path class="arrow-green" d="M 1344 614 C 1344 682 1046 690 994 764"/>
+  <path class="arrow-green" d="M 1054 792 L 1094 792"/>
+
+  <!-- Main video to overlay -->
+  <path class="arrow-blue" d="M 930 372 C 1110 402 1160 612 1160 764"/>
+
+  <!-- Output arrows -->
+  <path class="arrow-blue" d="M 1226 792 L 1266 792"/>
+  <path class="arrow-blue" d="M 1378 792 L 1418 792"/>
+
+  <!-- Dashed config arrows -->
+  <path class="arrow dash" d="M 142 754 C 130 590 118 380 146 228"/>
+  <path class="arrow dash" d="M 440 790 C 612 870 1254 872 1451 820"/>
+
+  <!-- Legend -->
+  <rect class="group" x="56" y="862" width="520" height="40"/>
+  <rect class="orig" x="76" y="874" width="22" height="16" stroke="#334155"/>
+  <text class="small" x="108" y="887">Original RTL</text>
+  <rect class="pre" x="204" y="874" width="22" height="16" stroke="#334155"/>
+  <text class="small" x="236" y="887">Custom preprocessing / buffering</text>
+  <rect class="cnn" x="420" y="874" width="22" height="16" stroke="#334155"/>
+  <text class="small" x="452" y="887">HLS-generated CNN</text>
+
+  <text class="note" x="632" y="887">Note: diagram reflects only the implemented RTL processing blocks in the current pipeline.</text>
+</svg>

@@ -1,0 +1,7 @@
+@E: CG855 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/generated/cnn_top.v":37:7:37:55|Duplicate module name input_1_bambu_artificial_ParmMgr_Read_fifo_modgen
+@E: CG855 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/generated/cnn_top.v":98:7:98:60|Duplicate module name layer10_out_bambu_artificial_ParmMgr_Write_fifo_modgen
+@E: CG855 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/generated/cnn_top.v":159:7:159:81|Duplicate module name datapath_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s
+@E: CG855 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/generated/cnn_top.v":52986:7:52986:83|Duplicate module name controller_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s
+@E: CG855 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/generated/cnn_top.v":64812:7:64812:76|Duplicate module name PBI_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s
+@E: CG855 :"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/generated/cnn_top.v":69553:7:69553:74|Duplicate module name p_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s
+

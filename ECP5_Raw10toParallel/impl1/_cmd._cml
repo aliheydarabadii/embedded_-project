@@ -1,0 +1,1 @@
+-link -encrypt -top RAW10toParallel -osyn /home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/synwork/Raw10toParallel_impl1_comp.srs /home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/synwork/layer0.srs  -jobname linker  

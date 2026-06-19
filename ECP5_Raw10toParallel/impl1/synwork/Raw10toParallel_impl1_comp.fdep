@@ -1,0 +1,230 @@
+#OPTIONS:"|-layerid|0|-orig_srs|/home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/synwork/Raw10toParallel_impl1_comp.srs|-top|RAW10toParallel|-prodtype|synplify_pro|-dspmac|-fixsmult|-infer_seqShift|-nram|-sdff_counter|-divnmod|-nostructver|-I|/usr/local/diamond/3.12/cae_library|-I|/home/heidarabadi/alis_model/hls_full_model_simple32|-I|/home/heidarabadi/alis_model/ECP5_Raw10toParallel|-I|/home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/|-I|/usr/local/diamond/3.12/synpbase/lib|-v2001|-devicelib|/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v|-devicelib|/usr/local/diamond/3.12/synpbase/lib/lucent/pmi_def.v|-encrypt|-pro|-DSBP_SYNTHESIS|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-D_MULTIPLE_FILE_COMPILATION_UNIT_|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001|-lib|work|-fv2001"
+#CUR:"/usr/local/diamond/3.12/synpbase/linux_a_64/c_ver":1634508915
+#CUR:"/usr/local/diamond/3.12/synpbase/lib/lucent/ecp5um.v":1634508903
+#CUR:"/usr/local/diamond/3.12/synpbase/lib/lucent/pmi_def.v":1634508904
+#CUR:"/usr/local/diamond/3.12/synpbase/lib/vlog/hypermods.v":1634508913
+#CUR:"/usr/local/diamond/3.12/synpbase/lib/vlog/umr_capim.v":1634508913
+#CUR:"/usr/local/diamond/3.12/synpbase/lib/vlog/scemi_objects.v":1634508913
+#CUR:"/usr/local/diamond/3.12/synpbase/lib/vlog/scemi_pipes.svh":1634508913
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/RAW10toParallel.v":1780163918
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/ab.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/blanking_adjustment.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/gamma_correction.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_core.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_ctrl.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_top.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_core.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_ctrl.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_top.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/image_pipe.v":1780159868
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/frame_grabber.v":1780163957
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/input_bram.v":1780163683
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/cnn_wrapper.v":1780163910
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/text_overlay.v":1780412205
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v":1780153555
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v":1780153555
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/generated/cnn_top.v":1780164300
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/debayer_dpram/debayer_dpram.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/rb_ram/rb_ram.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/dp_ram.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/gammaCorrector/gammaCorrector_top.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/gammaCorrector/gammaCorrector_bb.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/Gamma.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/sc_fifo/sc_fifo.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/image_fifo.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/color.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/colorspace/colorspace_top.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/colorspace/colorspace_bb.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/CSC.v":1779868316
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/array_490354.mem":1780153554
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/array_490420.mem":1780153554
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/array_490499.mem":1780153554
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/array_490504.mem":1780153554
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/array_490509.mem":1780153554
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/array_490514.mem":1780153554
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/array_490519.mem":1780153554
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/array_495267.mem":1780153554
+#CUR:"/home/heidarabadi/alis_model/hls_full_model_simple32/0_array_495267.mem":1780153554
+0			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/RAW10toParallel.v" verilog
+1			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/ab.v" verilog
+2			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/blanking_adjustment.v" verilog
+3			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/debayer.v" verilog
+4			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/gamma_correction.v" verilog
+5			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_core.v" verilog
+6			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_ctrl.v" verilog
+7			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/hdmi_i2c_top.v" verilog
+8			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_core.v" verilog
+9			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_ctrl.v" verilog
+10			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/i2c_top.v" verilog
+11			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/image_pipe.v" verilog
+12			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/frame_grabber.v" verilog
+13			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/input_bram.v" verilog
+14			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/cnn_wrapper.v" verilog
+15			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/text_overlay.v" verilog
+16			"/home/heidarabadi/alis_model/hls_full_model_simple32/panda_libtech.v" verilog
+17			"/home/heidarabadi/alis_model/hls_full_model_simple32/myproject.v" verilog
+18			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/cnn_integration/generated/cnn_top.v" verilog
+19			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/debayer_dpram/debayer_dpram.v" verilog
+20			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/rb_ram/rb_ram.v" verilog
+21			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/dp_ram/dp_ram.v" verilog
+22			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/gammaCorrector/gammaCorrector_top.v" verilog
+23			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/gammaCorrector/gammaCorrector_bb.v" verilog
+24			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/Gamma/Gamma.v" verilog
+25			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/sc_fifo/sc_fifo.v" verilog
+26			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/image_fifo/image_fifo.v" verilog
+27			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/color.v" verilog
+28			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/colorspace/colorspace_top.v" verilog
+29			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/colorspace/colorspace_bb.v" verilog
+30			"/home/heidarabadi/alis_model/ECP5_Raw10toParallel/source/clarity/CSC/CSC.v" verilog
+#Dependency Lists(Uses List)
+0 7 10 15 18 14 13 12 11
+1 -1
+2 -1
+3 19
+4 24
+5 -1
+6 -1
+7 5 6
+8 -1
+9 -1
+10 8 9
+11 4 27 3 1 26 2
+12 -1
+13 -1
+14 -1
+15 -1
+16 -1
+17 16
+18 17
+19 -1
+20 -1
+21 20 19
+22 23
+23 -1
+24 23
+25 -1
+26 25
+27 30
+28 29
+29 -1
+30 28
+#Dependency Lists(Users Of)
+0 -1
+1 11
+2 11
+3 11
+4 11
+5 7
+6 7
+7 0
+8 10
+9 10
+10 0
+11 0
+12 0
+13 0
+14 0
+15 0
+16 17
+17 18
+18 0
+19 21 3
+20 21
+21 -1
+22 -1
+23 24 22
+24 4
+25 26
+26 11
+27 11
+28 30
+29 28
+30 27
+#Design Unit to File Association
+module work colorspace 29
+module work colorspace_top 28
+module work CSC 30
+module work sc_fifo 25
+module work gammaCorrector 23
+module work gammaCorrector_top 22
+module work dp_ram 21
+module work rb_ram 20
+module work p_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s 17
+module work PBI_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s 17
+module work controller_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s 17
+module work datapath_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s 17
+module work layer10_out_bambu_artificial_ParmMgr_Write_fifo_modgen 17
+module work input_1_bambu_artificial_ParmMgr_Read_fifo_modgen 17
+module work register_AR 16
+module work MUX2_GATE 16
+module work split_signal 16
+module work join_signal 16
+module work bus_merger 16
+module work ui_ternary_add_node_FU 16
+module work ui_shr_node_FU 16
+module work ui_shl_node_FU 16
+module work ui_select_node_FU 16
+module work ui_or_node_FU 16
+module work ui_min_node_FU 16
+module work ui_lt_node_FU 16
+module work ui_gep_node_FU 16
+module work ui_fshl_node_FU 16
+module work ui_eq_node_FU 16
+module work ui_concat_bit_node_FU 16
+module work ui_and_node_FU 16
+module work ui_add_node_FU 16
+module work sub_node_FU 16
+module work shr_node_FU 16
+module work shl_node_FU 16
+module work select_node_FU 16
+module work max_node_FU 16
+module work concat_bit_node_FU 16
+module work and_node_FU 16
+module work add_node_FU 16
+module work IIdata_converter_FU 16
+module work multi_read_cond_FU 16
+module work IUdata_converter_FU 16
+module work ui_extract_bit_node_FU 16
+module work UIdata_converter_FU 16
+module work UUdata_converter_FU 16
+module work ui_bitcast_node_FU 16
+module work lut_node_FU 16
+module work addr_node_FU 16
+module work ARRAY_1D_STD_BRAM_NN 16
+module work ARRAY_1D_STD_BRAM_NN_SP 16
+module work BRAM_MEMORY_NN_CORE 16
+module work TRUE_DUAL_PORT_BYTE_ENABLING_RAM 16
+module work BRAM_MEMORY_CORE_SMALL 16
+module work ADDRESS_DECODING_LOGIC_NN 16
+module work ARRAY_1D_STD_DISTRAM_NN_SDS 16
+module work ARRAY_1D_STD_BRAM_NN_SDS 16
+module work ARRAY_1D_STD_BRAM_NN_SDS_BASE 16
+module work STD_NRNW_BRAM_GEN 16
+module work STD_DP_BRAM 16
+module work STD_NRNW_BRAM_XOR 16
+module work STD_NR_BRAM 16
+module work STD_SDP_BRAMFW 16
+module work STD_SDP_BRAM 16
+module work register_SE 16
+module work color 27
+module work image_fifo 26
+module work i2c_ctrl 9
+module work i2c_core 8
+module work hdmi_i2c_ctrl 6
+module work hdmi_i2c_core 5
+module work Gamma 24
+module work gamma_correction 4
+module work debayer_dpram 19
+module work debayer 3
+module work blanking_adjustment 2
+module work ab 1
+module work hdmi_i2c_top 7
+module work i2c_top 10
+module work text_overlay 15
+module work cnn_top 18
+module work cnn_wrapper 14
+module work input_bram 13
+module work frame_grabber 12
+module work image_pipe 11
+module work RAW10toParallel 0

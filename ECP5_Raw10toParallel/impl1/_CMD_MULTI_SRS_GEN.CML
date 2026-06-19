@@ -1,0 +1,1 @@
+ -link  -top  RAW10toParallel  -multisrs  /home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/synwork/Raw10toParallel_impl1_comp.srs  -osyn  /home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/synwork/Raw10toParallel_impl1_mult.srs  -log  /home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/synlog/Raw10toParallel_impl1_multi_srs_gen.srr 

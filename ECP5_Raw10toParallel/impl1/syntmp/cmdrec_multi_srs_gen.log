@@ -1,0 +1,8 @@
+/usr/local/diamond/3.12/synpbase/bin/syn_nfilter  -link  -top  RAW10toParallel  -multisrs  /home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/synwork/Raw10toParallel_impl1_comp.srs  -osyn  /home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/synwork/Raw10toParallel_impl1_mult.srs  -log  /home/heidarabadi/alis_model/ECP5_Raw10toParallel/impl1/synlog/Raw10toParallel_impl1_multi_srs_gen.srr 
+relcom:/usr/local/diamond/3.12/synpbase/bin/syn_nfilter -link -top RAW10toParallel -multisrs ../synwork/Raw10toParallel_impl1_comp.srs -osyn ../synwork/Raw10toParallel_impl1_mult.srs -log ../synlog/Raw10toParallel_impl1_multi_srs_gen.srr
+rc:0 success:1 runtime:2
+file:../synwork/Raw10toParallel_impl1_comp.srs|io:i|time:1780413081|size:1637166|exec:0|csum:491F054EABBFFD3E3705235E06B39D9B
+file:../synwork/Raw10toParallel_impl1_mult.srs|io:o|time:1780413084|size:14353|exec:0|csum:
+file:../synlog/Raw10toParallel_impl1_multi_srs_gen.srr|io:o|time:1780413084|size:1248|exec:0|csum:
+file:/usr/local/diamond/3.12/synpbase/linux_a_64/syn_nfilter|io:i|time:1634508937|size:12428832|exec:1|csum:AF09A3A5B956510167C7A871BAD09178
+file:/usr/local/diamond/3.12/synpbase/bin/syn_nfilter|io:i|time:1634508890|size:368|exec:1|csum:004E4455B64BA10AD6A92FB2301610E0
