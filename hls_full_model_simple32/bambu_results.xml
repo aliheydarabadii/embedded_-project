@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<application
+	args="'bambu' '--top-fname=myproject' '-lm' '-Ifirmware/ac_types' '--compiler=I386_CLANG16' '--generate-interface=INFER' '-v4' 'firmware/myproject.cpp'"
+	version="Version: PandA 2025.07 - Revision 8fd1e9e0c25dd55e5482fc4094b89d4d53154423-feature/CSROA-and-predication"
+	timestamp="2026-05-30T17:05:55"
+	benchmark="myproject"
+	verbosity="4">
+	<sources
+		compiler="clang++-16"
+		cflags=" -O2  -mllvm -enable-loop-flatten  -fno-builtin-bcmp -fno-builtin-memcpy -fno-builtin-memmove -fno-builtin-memset -fno-exceptions -ffp-contract=off -finline-functions -fno-slp-vectorize -fno-stack-protector -fno-threadsafe-statics -fno-unroll-loops -fno-use-cxa-atexit -fno-vectorize -fwrapv  --std=c++14 -D__BAMBU__ -D__SYNTHESIS__ -Wuninitialized -I firmware/ac_types -isystem $BAMBU_HLS/include/panda  -lm  -D__NO_INLINE__  -m32 -Xclang -no-opaque-pointers  ">
+		<file>firmware/myproject.cpp</file>
+	</sources>
+	<outputs>
+		<file>myproject.v</file>
+		<file>panda_libtech.v</file>
+	</outputs>
+	<top_module
+		name="p_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_s"
+		clock_name="clock"
+		combinational="false" />
+	<target
+		period="10"
+		period_ps="10000"
+		frequency="100"
+		connect_iob="false"
+		vendor="Xilinx"
+		family="Zynq"
+		model="xc7z020"
+		package="clg484"
+		speed_grade="-1" />
+	<backend
+		bambu_results="bambu_results.xml"
+		sdc_ext_file=""
+		fast="false"
+		assert="false"
+		vcd=""
+		discrepancy="false"
+		parallel="1" />
+	<hls_results
+		planner_context_xml="false">
+		<function_490295
+			id="490295"
+			name="_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_"
+			function_pipelined="false"
+			function_ii="0">
+			<loop_7
+				bb="7"
+				ii="1" />
+			<loop_10
+				bb="10"
+				ii="2" />
+			<loop_13
+				bb="13"
+				ii="1" />
+			<loop_19
+				bb="19"
+				ii="1" />
+			<loop_103
+				bb="103"
+				ii="1" />
+		</function_490295>
+	</hls_results>
+</application>

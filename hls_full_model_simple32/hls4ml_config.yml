@@ -1,0 +1,106 @@
+Backend: Bambu
+ClockPeriod: 5
+ClockUncertainty: 12.5%
+HLSConfig:
+  LayerName:
+    average_pooling2d:
+      ConvImplementation: LineBuffer
+      Precision:
+        accum: fixed<12,4>
+        result: fixed<12,4>
+      ReuseFactor: 1
+      Trace: false
+    average_pooling2d_1:
+      ConvImplementation: LineBuffer
+      Precision:
+        accum: fixed<20,6>
+        result: fixed<20,6>
+      ReuseFactor: 1
+      Trace: false
+    conv2d:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: fixed<16,5>
+        bias: fixed<16,5>
+        result: fixed<16,5>
+        weight: fixed<16,5>
+      ReuseFactor: 1
+      Trace: false
+    conv2d_1:
+      ConvImplementation: LineBuffer
+      ParallelizationFactor: 1
+      Precision:
+        accum: fixed<16,5>
+        bias: fixed<16,5>
+        result: fixed<16,5>
+        weight: fixed<16,5>
+      ReuseFactor: 1
+      Trace: false
+    conv2d_1_relu:
+      Precision:
+        result: fixed<12,4>
+        table: fixed<12,4>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    conv2d_relu:
+      Precision:
+        result: fixed<14,4>
+        table: fixed<14,4>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    dense:
+      Precision:
+        accum: fixed<14,4>
+        bias: fixed<14,4>
+        result: fixed<14,4>
+        weight: fixed<14,4>
+      ReuseFactor: 1
+      Trace: false
+    dense_sigmoid:
+      Precision:
+        result: fixed<12,4>
+        table: fixed<12,4>
+      ReuseFactor: 1
+      TableSize: 1024
+      Trace: false
+    flatten:
+      Precision:
+        result: fixed<12,4>
+      Trace: false
+    input_1:
+      Precision:
+        result: fixed<12,4>
+      Trace: false
+  Model:
+    BitExact: null
+    BramFactor: 1000000000
+    IOType: io_parallel
+    Precision: fixed<20,6>
+    ReuseFactor: 9
+    Strategy: Resource
+    TraceOutput: false
+IOType: io_parallel
+InputData: null
+InputShapes:
+  input_1:
+  - 32
+  - 32
+  - 1
+KerasModel: !keras_model 'hls_full_model_simple32/keras_model.keras'
+OutputDir: hls_full_model_simple32
+OutputPredictions: null
+OutputShapes:
+  layer10_out:
+  - 1
+Part: LFE5UM85F8BG756C
+ProjectName: myproject
+Stamp: c59a543e
+Version: 1.0.0
+WriterConfig:
+  Namespace: null
+  TBOutputStream: both
+  WriteTar: false
+  WriteWeightsTxt: true

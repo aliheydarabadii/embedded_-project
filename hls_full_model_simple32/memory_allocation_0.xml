@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<memory>
+  <memory_allocation base_address="1073741824">
+    <object scope="_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_" name="internal_490354" is_internal="T"/>
+    <object scope="_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_" name="internal_490420" is_internal="T"/>
+    <object scope="_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_" name="internal_490499" is_internal="T"/>
+    <object scope="_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_" name="internal_490504" is_internal="T"/>
+    <object scope="_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_" name="internal_490509" is_internal="T"/>
+    <object scope="_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_" name="internal_490514" is_internal="T"/>
+    <object scope="_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_" name="internal_490519" is_internal="T"/>
+    <object scope="_Z9myprojectP8ac_fixedILi12ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES3_" name="_ZZN4nnet7sigmoidI8ac_fixedILi14ELi4ELb1EL9ac_q_mode0EL9ac_o_mode0EES1_ILi12ELi4ELb1ELS2_0ELS3_0EE16sigmoid_config10EEvPT_PT0_E13sigmoid_table" is_internal="T"/>
+  </memory_allocation>
+</memory>
